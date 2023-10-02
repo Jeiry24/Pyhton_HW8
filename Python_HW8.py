@@ -45,7 +45,7 @@ def load_data_from_file():
                 name, phone = line.strip().split(": ")
                 phonebook[name] = phone
     except FileNotFoundError:
-        pass  # Ignore if the file doesn't exist
+        pass  
 
 # Загрузка данных из файла при запуске программы
 load_data_from_file()
@@ -62,7 +62,7 @@ while True:
     print("1. Печать телефонной книги")
     print("2. Обновление номера телефона")
     print("3. Удаление контакта")
-    print("4. Завершить")  # Добавлен новый пункт в меню
+    print("4. Завершить")  
     
     choice = input("Выберите действие (1-4): ")
 
@@ -76,6 +76,6 @@ while True:
         name = input("Введите имя контакта для удаления: ")
         delete_contact(name)
     elif choice == '4':
-        break  # Остановка программы при выборе "Завершить"
+        break  
     else:
         print("Неверный ввод. Пожалуйста, введите число от 1 до 4.")
